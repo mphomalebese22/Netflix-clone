@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+}
+
+.navbar__brand img {
+  height: 50px;
+}
+
+.navbar__nav__items {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-left: 20px;
+}
+
+.signin__button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero__bg__image__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.hero__bg__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__bg__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.wrapper {
+  text-align: center;
+  max-width: 400px; /* Adjust width as needed */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.box1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.form__container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.email__input,
+.password__input {
+  width: 300px;
+  padding: 10px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  font-size: 16px;
+}
+
+.email__label,
+.password__label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: white;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.email__input:focus ~ .email__label,
+.password__input:focus ~ .password__label,
+.email__input:not(:placeholder-shown) ~ .email__label,
+.password__input:not(:placeholder-shown) ~ .password__label {
+  top: 0;
+  transform: translateY(-100%);
+  font-size: 12px;
+  color: white;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.remember-me input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.signup__link {
+  color: #ff4500;
+}
+
+.primary__button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.primary__button i {
+  margin-left: 10px;
+}
